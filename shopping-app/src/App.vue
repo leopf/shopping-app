@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <h1>Oft benötigte Waren</h1>
+    <h1>Usually bought products</h1>
     <item-text-editor v-on:itemCreated="createUsualItemW"/>
     <ItemDisplay v-for="ui in usualItems" v-bind:key="ui.id" v-bind:item="ui" v-bind:allowCreate="true" v-on:deleted="removeUsualItem" v-on:updated="updateUsualItem" v-on:createItem="createShoppingItemFromUsual"/>
-    <h1>Einkaufsliste</h1>
+    <h1>Shopping-List</h1>
     <item-text-editor v-on:itemCreated="createShoppingItemW"/>
     <ItemDisplay v-for="si in shoppingItems" v-bind:key="si.id" v-bind:item="si" v-on:deleted="removeShoppingItem" v-on:updated="updateShoppingItem"/>
   </div>

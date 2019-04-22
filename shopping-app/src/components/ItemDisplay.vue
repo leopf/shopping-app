@@ -1,7 +1,7 @@
 <template>
   <div class="s-item-display item-style">
-    <input class="item-name" v-on:change="updateRequired" v-on:keydown="valueChanged" type="text" v-model="item.name" placeholder="Bezeichnung eingeben">
-    <input class="item-amount" v-on:change="updateRequired" v-on:keydown="valueChanged" type="text" v-model="item.amount" placeholder="Menge eingeben">
+    <input class="item-name" v-on:change="updateRequired" v-on:keydown="valueChanged" type="text" v-model="item.name" placeholder="enter name">
+    <input class="item-amount" v-on:change="updateRequired" v-on:keydown="valueChanged" type="text" v-model="item.amount" placeholder="enter amount">
     <div class="item-slide-right">
       <div v-on:click="deleteItem"></div>
     </div>
